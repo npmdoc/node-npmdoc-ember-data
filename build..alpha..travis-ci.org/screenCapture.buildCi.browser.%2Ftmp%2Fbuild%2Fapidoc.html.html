@@ -1,0 +1,1065 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a>ember-data (v2.12.2)</a>
+</h1>
+<h4>A data layer for your Ember applications.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-data">module ember-data</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data._setupBabelOptions">
+            function <span class="apidocSignatureSpan">ember-data.</span>_setupBabelOptions
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data._warn">
+            function <span class="apidocSignatureSpan">ember-data.</span>_warn
+            <span class="apidocSignatureSpan">(message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.blueprintsPath">
+            function <span class="apidocSignatureSpan">ember-data.</span>blueprintsPath
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.disallow_multiple_var_decl_with_assignment">
+            function <span class="apidocSignatureSpan">ember-data.</span>disallow_multiple_var_decl_with_assignment
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.disallow_space_before_semicolon">
+            function <span class="apidocSignatureSpan">ember-data.</span>disallow_space_before_semicolon
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.disallow_space_inside_round_braces_in_call_expression">
+            function <span class="apidocSignatureSpan">ember-data.</span>disallow_space_inside_round_braces_in_call_expression
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.included">
+            function <span class="apidocSignatureSpan">ember-data.</span>included
+            <span class="apidocSignatureSpan">(app)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.init">
+            function <span class="apidocSignatureSpan">ember-data.</span>init
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.require_spaces_after_closing_parenthesis_in_function_declaration">
+            function <span class="apidocSignatureSpan">ember-data.</span>require_spaces_after_closing_parenthesis_in_function_declaration
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.treeForAddon">
+            function <span class="apidocSignatureSpan">ember-data.</span>treeForAddon
+            <span class="apidocSignatureSpan">(dir)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.treeForApp">
+            function <span class="apidocSignatureSpan">ember-data.</span>treeForApp
+            <span class="apidocSignatureSpan">(dir)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ember-data.</span>disallow_multiple_var_decl_with_assignment.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ember-data.</span>disallow_space_before_semicolon.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ember-data.</span>disallow_space_inside_round_braces_in_call_expression.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ember-data.</span>require_spaces_after_closing_parenthesis_in_function_declaration.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ember-data.</span>name</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-data.disallow_multiple_var_decl_with_assignment">module ember-data.disallow_multiple_var_decl_with_assignment</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.disallow_multiple_var_decl_with_assignment.disallow_multiple_var_decl_with_assignment">
+            function <span class="apidocSignatureSpan">ember-data.</span>disallow_multiple_var_decl_with_assignment
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-data.disallow_multiple_var_decl_with_assignment.prototype">module ember-data.disallow_multiple_var_decl_with_assignment.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.disallow_multiple_var_decl_with_assignment.prototype.check">
+            function <span class="apidocSignatureSpan">ember-data.disallow_multiple_var_decl_with_assignment.prototype.</span>check
+            <span class="apidocSignatureSpan">(file, errors)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.disallow_multiple_var_decl_with_assignment.prototype.configure">
+            function <span class="apidocSignatureSpan">ember-data.disallow_multiple_var_decl_with_assignment.prototype.</span>configure
+            <span class="apidocSignatureSpan">(disallowMultipleVarDeclWithAssignment)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.disallow_multiple_var_decl_with_assignment.prototype.getOptionName">
+            function <span class="apidocSignatureSpan">ember-data.disallow_multiple_var_decl_with_assignment.prototype.</span>getOptionName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-data.disallow_space_before_semicolon">module ember-data.disallow_space_before_semicolon</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.disallow_space_before_semicolon.disallow_space_before_semicolon">
+            function <span class="apidocSignatureSpan">ember-data.</span>disallow_space_before_semicolon
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-data.disallow_space_before_semicolon.prototype">module ember-data.disallow_space_before_semicolon.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.disallow_space_before_semicolon.prototype.check">
+            function <span class="apidocSignatureSpan">ember-data.disallow_space_before_semicolon.prototype.</span>check
+            <span class="apidocSignatureSpan">(file, errors)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.disallow_space_before_semicolon.prototype.configure">
+            function <span class="apidocSignatureSpan">ember-data.disallow_space_before_semicolon.prototype.</span>configure
+            <span class="apidocSignatureSpan">(disallowSpacesBeforeSemicolons)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.disallow_space_before_semicolon.prototype.getOptionName">
+            function <span class="apidocSignatureSpan">ember-data.disallow_space_before_semicolon.prototype.</span>getOptionName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-data.disallow_space_inside_round_braces_in_call_expression">module ember-data.disallow_space_inside_round_braces_in_call_expression</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.disallow_space_inside_round_braces_in_call_expression.disallow_space_inside_round_braces_in_call_expression">
+            function <span class="apidocSignatureSpan">ember-data.</span>disallow_space_inside_round_braces_in_call_expression
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-data.disallow_space_inside_round_braces_in_call_expression.prototype">module ember-data.disallow_space_inside_round_braces_in_call_expression.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.disallow_space_inside_round_braces_in_call_expression.prototype.check">
+            function <span class="apidocSignatureSpan">ember-data.disallow_space_inside_round_braces_in_call_expression.prototype.</span>check
+            <span class="apidocSignatureSpan">(file, errors)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.disallow_space_inside_round_braces_in_call_expression.prototype.configure">
+            function <span class="apidocSignatureSpan">ember-data.disallow_space_inside_round_braces_in_call_expression.prototype.</span>configure
+            <span class="apidocSignatureSpan">(requireSpacesInsideRoundBracesInCallExpression)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.disallow_space_inside_round_braces_in_call_expression.prototype.getOptionName">
+            function <span class="apidocSignatureSpan">ember-data.disallow_space_inside_round_braces_in_call_expression.prototype.</span>getOptionName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-data.require_spaces_after_closing_parenthesis_in_function_declaration">module ember-data.require_spaces_after_closing_parenthesis_in_function_declaration</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.require_spaces_after_closing_parenthesis_in_function_declaration">
+            function <span class="apidocSignatureSpan">ember-data.</span>require_spaces_after_closing_parenthesis_in_function_declaration
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.prototype">module ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.prototype.check">
+            function <span class="apidocSignatureSpan">ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.prototype.</span>check
+            <span class="apidocSignatureSpan">(file, errors)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.prototype.configure">
+            function <span class="apidocSignatureSpan">ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.prototype.</span>configure
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.prototype.getOptionName">
+            function <span class="apidocSignatureSpan">ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.prototype.</span>getOptionName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-data" id="apidoc.module.ember-data">module ember-data</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data._setupBabelOptions" id="apidoc.element.ember-data._setupBabelOptions">
+        function <span class="apidocSignatureSpan">ember-data.</span>_setupBabelOptions
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_setupBabelOptions = function () {
+  if (this._hasSetupBabelOptions) {
+    return;
+  }
+
+  this.options.babel = this.options.babel || {};
+  add(this.options.babel, 'blacklist', ['es6.modules', 'useStrict']);
+  add(this.options.babel, 'plugins', require('./lib/stripped-build-plugins')(process.env.EMBER_ENV));
+
+  this._hasSetupBabelOptions = true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+this._hasSetupBabelOptions = true;
+  },
+
+  included: function(app) {
+this._super.included.apply(this, arguments);
+
+this.<span class="apidocCodeKeywordSpan">_setupBabelOptions</span>();
+
+if (this._forceBowerUsage) {
+  this.app.import({
+    development: app.bowerDirectory + '/ember-data/ember-data.js',
+    production: app.bowerDirectory + '/ember-data/ember-data.prod.js'
+  });
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data._warn" id="apidoc.element.ember-data._warn">
+        function <span class="apidocSignatureSpan">ember-data.</span>_warn
+        <span class="apidocSignatureSpan">(message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_warn = function (message) {
+  var chalk = require('chalk');
+  var warning = chalk.yellow('WARNING: ' + message);
+
+  if (this.ui &amp;&amp; this.ui.writeWarnLine) {
+    this.ui.writeWarnLine(message);
+  } else if (this.ui) {
+    this.ui.writeLine(warning);
+  } else {
+    console.log(warning);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    if (process.env.EMBER_DATA_SKIP_VERSION_CHECKING_DO_NOT_USE_THIS_ENV_VARIABLE) {
+// Skip for node tests as we can't currently override the version of ember-cli-shims
+// before the test helpers run.
+return;
+    }
+
+    if (bowerDeps['ember-data']) {
+this.<span class="apidocCodeKeywordSpan">_warn</span>('Please remove `ember-data` from `bower.json`. As of Ember Data 2.3.0
+, only the NPM package is needed. If you need an ' +
+          'earlier version of ember-data (&lt; 2.3.0), you can leave this unchanged for now, but we strongly suggest you
+upgrade your version of Ember Data ' +
+          'as soon as possible.');
+this._forceBowerUsage = true;
+
+var emberDataBower = checker.for('ember-data', 'bower');
+
+if (shims &amp;&amp; shims.version &amp;&amp; !shims.satisfies('&lt; 0.1.0') &amp;&amp; emberDataBower.satisfies
+('&lt; 2.3.0-beta.3')) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.blueprintsPath" id="apidoc.element.ember-data.blueprintsPath">
+        function <span class="apidocSignatureSpan">ember-data.</span>blueprintsPath
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">blueprintsPath = function () {
+  return path.join(__dirname, 'blueprints');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.disallow_multiple_var_decl_with_assignment" id="apidoc.element.ember-data.disallow_multiple_var_decl_with_assignment">
+        function <span class="apidocSignatureSpan">ember-data.</span>disallow_multiple_var_decl_with_assignment
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">disallow_multiple_var_decl_with_assignment = function () {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.disallow_space_before_semicolon" id="apidoc.element.ember-data.disallow_space_before_semicolon">
+        function <span class="apidocSignatureSpan">ember-data.</span>disallow_space_before_semicolon
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">disallow_space_before_semicolon = function () {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.disallow_space_inside_round_braces_in_call_expression" id="apidoc.element.ember-data.disallow_space_inside_round_braces_in_call_expression">
+        function <span class="apidocSignatureSpan">ember-data.</span>disallow_space_inside_round_braces_in_call_expression
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">disallow_space_inside_round_braces_in_call_expression = function () {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.included" id="apidoc.element.ember-data.included">
+        function <span class="apidocSignatureSpan">ember-data.</span>included
+        <span class="apidocSignatureSpan">(app)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">included = function (app) {
+  this._super.included.apply(this, arguments);
+
+  this._setupBabelOptions();
+
+  if (this._forceBowerUsage) {
+    this.app.import({
+      development: app.bowerDirectory + '/ember-data/ember-data.js',
+      production: app.bowerDirectory + '/ember-data/ember-data.prod.js'
+    });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.init" id="apidoc.element.ember-data.init">
+        function <span class="apidocSignatureSpan">ember-data.</span>init
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">init = function () {
+  this._super.init &amp;&amp; this._super.init.apply(this, arguments);
+
+  var bowerDeps = this.project.bowerDependencies();
+
+  var VersionChecker = require('ember-cli-version-checker');
+  var options = this.options = this.options || {};
+
+  var checker = new VersionChecker(this);
+  // prevent errors when ember-cli-shims is no longer required
+  var shims = bowerDeps['ember-cli-shims'] &amp;&amp; checker.for('ember-cli-shims', 'bower');
+
+  var semver = require('semver');
+  var version = require('./package').version;
+
+  if (process.env.EMBER_DATA_SKIP_VERSION_CHECKING_DO_NOT_USE_THIS_ENV_VARIABLE) {
+    // Skip for node tests as we can't currently override the version of ember-cli-shims
+    // before the test helpers run.
+    return;
+  }
+
+  if (bowerDeps['ember-data']) {
+    this._warn('Please remove `ember-data` from `bower.json`. As of Ember Data 2.3.0, only the NPM package is needed. If you need
+ an ' +
+              'earlier version of ember-data (&lt; 2.3.0), you can leave this unchanged for now, but we strongly suggest you upgrade
+ your version of Ember Data ' +
+              'as soon as possible.');
+    this._forceBowerUsage = true;
+
+    var emberDataBower = checker.for('ember-data', 'bower');
+
+    if (shims &amp;&amp; shims.version &amp;&amp; !shims.satisfies('&lt; 0.1.0') &amp;&amp; emberDataBower.satisfies('&lt; 2.3.0-beta.3')) {
+      throw new SilentError('Using a version of ember-cli-shims greater than or equal to 0.1.0 will cause errors while loading Ember
+ Data &lt; 2.3.0-beta.3 Please update ember-cli-shims from ' + shims.version + ' to 0.0.6');
+    }
+
+    if (shims &amp;&amp; shims.version &amp;&amp; !shims.satisfies('&gt;= 0.1.0') &amp;&amp; emberDataBower.satisfies('&gt;= 2.3.0-beta.3')) {
+      throw new SilentError('Using a version of ember-cli-shims prior to 0.1.0 will cause errors while loading Ember Data 2.3.0-
+beta.3+. Please update ember-cli-shims from ' + shims.version + ' to 0.1.0.');
+    }
+
+  } else {
+    // NPM only, but ember-cli-shims does not match
+    if (shims &amp;&amp; shims.version &amp;&amp; !shims.satisfies('&gt;= 0.1.0') &amp;&amp; semver.satisfies(version, '^2.3.0-beta.3')) {
+      throw new SilentError('Using a version of ember-cli-shims prior to 0.1.0 will cause errors while loading Ember Data 2.3.0-
+beta.3+. Please update ember-cli-shims from ' + shims.version + ' to 0.1.0.');
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.require_spaces_after_closing_parenthesis_in_function_declaration" id="apidoc.element.ember-data.require_spaces_after_closing_parenthesis_in_function_declaration">
+        function <span class="apidocSignatureSpan">ember-data.</span>require_spaces_after_closing_parenthesis_in_function_declaration
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">require_spaces_after_closing_parenthesis_in_function_declaration = function () {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.treeForAddon" id="apidoc.element.ember-data.treeForAddon">
+        function <span class="apidocSignatureSpan">ember-data.</span>treeForAddon
+        <span class="apidocSignatureSpan">(dir)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">treeForAddon = function (dir) {
+  if (this._forceBowerUsage) {
+    // Fakes an empty broccoli tree
+    return { inputTree: dir, rebuild: function() { return []; } };
+  }
+
+  var version   = require('./lib/version');
+  var merge     = require('broccoli-merge-trees');
+
+  return this._super.treeForAddon.call(this, merge([
+    version(),
+    dir
+  ]));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.treeForApp" id="apidoc.element.ember-data.treeForApp">
+        function <span class="apidocSignatureSpan">ember-data.</span>treeForApp
+        <span class="apidocSignatureSpan">(dir)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">treeForApp = function (dir) {
+  if (this._forceBowerUsage) {
+    // Fake an empty broccoli tree
+    return { inputTree: dir, rebuild: function() { return []; } };
+  }
+
+  // this._super.treeForApp is undefined in ember-cli (1.13) for some reason.
+  // TODO: investigate why treeForApp isn't on _super
+  return dir;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-data.disallow_multiple_var_decl_with_assignment" id="apidoc.module.ember-data.disallow_multiple_var_decl_with_assignment">module ember-data.disallow_multiple_var_decl_with_assignment</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.disallow_multiple_var_decl_with_assignment.disallow_multiple_var_decl_with_assignment" id="apidoc.element.ember-data.disallow_multiple_var_decl_with_assignment.disallow_multiple_var_decl_with_assignment">
+        function <span class="apidocSignatureSpan">ember-data.</span>disallow_multiple_var_decl_with_assignment
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">disallow_multiple_var_decl_with_assignment = function () {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-data.disallow_multiple_var_decl_with_assignment.prototype" id="apidoc.module.ember-data.disallow_multiple_var_decl_with_assignment.prototype">module ember-data.disallow_multiple_var_decl_with_assignment.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.disallow_multiple_var_decl_with_assignment.prototype.check" id="apidoc.element.ember-data.disallow_multiple_var_decl_with_assignment.prototype.check">
+        function <span class="apidocSignatureSpan">ember-data.disallow_multiple_var_decl_with_assignment.prototype.</span>check
+        <span class="apidocSignatureSpan">(file, errors)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">check = function (file, errors) {
+  file.iterateNodesByType('VariableDeclaration', function(node) {
+    // allow multiple var declarations in for statement
+    // for (var i = 0, j = myArray.length; i &lt; j; i++) {}
+    if (node.parentNode.type === 'ForStatement') { return; }
+
+    var hasAssignment = false;
+    var multiDeclaration = node.declarations.length &gt; 1;
+
+    node.declarations.forEach(function(declaration) {
+      if (declaration.init) { hasAssignment = true; }
+    });
+
+    if (hasAssignment &amp;&amp; multiDeclaration) {
+      errors.add('Multiple assigning variable declarations', node.loc.start);
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.disallow_multiple_var_decl_with_assignment.prototype.configure" id="apidoc.element.ember-data.disallow_multiple_var_decl_with_assignment.prototype.configure">
+        function <span class="apidocSignatureSpan">ember-data.disallow_multiple_var_decl_with_assignment.prototype.</span>configure
+        <span class="apidocSignatureSpan">(disallowMultipleVarDeclWithAssignment)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">configure = function (disallowMultipleVarDeclWithAssignment) {
+  assert(
+    typeof disallowMultipleVarDeclWithAssignment === 'boolean',
+    'disallowMultipleVarDeclWithAssignment option requires boolean value'
+  );
+  assert(
+    disallowMultipleVarDeclWithAssignment === true,
+    'disallowMultipleVarDeclWithAssignment option requires true value or should be removed'
+  );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.disallow_multiple_var_decl_with_assignment.prototype.getOptionName" id="apidoc.element.ember-data.disallow_multiple_var_decl_with_assignment.prototype.getOptionName">
+        function <span class="apidocSignatureSpan">ember-data.disallow_multiple_var_decl_with_assignment.prototype.</span>getOptionName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getOptionName = function () {
+  return 'disallowMultipleVarDeclWithAssignment';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-data.disallow_space_before_semicolon" id="apidoc.module.ember-data.disallow_space_before_semicolon">module ember-data.disallow_space_before_semicolon</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.disallow_space_before_semicolon.disallow_space_before_semicolon" id="apidoc.element.ember-data.disallow_space_before_semicolon.disallow_space_before_semicolon">
+        function <span class="apidocSignatureSpan">ember-data.</span>disallow_space_before_semicolon
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">disallow_space_before_semicolon = function () {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-data.disallow_space_before_semicolon.prototype" id="apidoc.module.ember-data.disallow_space_before_semicolon.prototype">module ember-data.disallow_space_before_semicolon.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.disallow_space_before_semicolon.prototype.check" id="apidoc.element.ember-data.disallow_space_before_semicolon.prototype.check">
+        function <span class="apidocSignatureSpan">ember-data.disallow_space_before_semicolon.prototype.</span>check
+        <span class="apidocSignatureSpan">(file, errors)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">check = function (file, errors) {
+  var lines = file.getLines();
+  for (var i = 0; i &lt; lines.length; i++) {
+    if (lines[i].match(/\s+;$/)) {
+      errors.add('Spaces are disallowed before semicolons.', i + 1, lines[i].length - 2);
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.disallow_space_before_semicolon.prototype.configure" id="apidoc.element.ember-data.disallow_space_before_semicolon.prototype.configure">
+        function <span class="apidocSignatureSpan">ember-data.disallow_space_before_semicolon.prototype.</span>configure
+        <span class="apidocSignatureSpan">(disallowSpacesBeforeSemicolons)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">configure = function (disallowSpacesBeforeSemicolons) {
+  assert(
+    typeof disallowSpacesBeforeSemicolons === 'boolean',
+    'disallowSpacesBeforeSemicolons option requires boolean value'
+  );
+  assert(
+    disallowSpacesBeforeSemicolons === true,
+    'disallowSpacesBeforeSemicolons option requires true value or should be removed'
+  );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.disallow_space_before_semicolon.prototype.getOptionName" id="apidoc.element.ember-data.disallow_space_before_semicolon.prototype.getOptionName">
+        function <span class="apidocSignatureSpan">ember-data.disallow_space_before_semicolon.prototype.</span>getOptionName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getOptionName = function () {
+  return 'disallowSpacesBeforeSemicolons';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-data.disallow_space_inside_round_braces_in_call_expression" id="apidoc.module.ember-data.disallow_space_inside_round_braces_in_call_expression">module ember-data.disallow_space_inside_round_braces_in_call_expression</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.disallow_space_inside_round_braces_in_call_expression.disallow_space_inside_round_braces_in_call_expression" id="apidoc.element.ember-data.disallow_space_inside_round_braces_in_call_expression.disallow_space_inside_round_braces_in_call_expression">
+        function <span class="apidocSignatureSpan">ember-data.</span>disallow_space_inside_round_braces_in_call_expression
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">disallow_space_inside_round_braces_in_call_expression = function () {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-data.disallow_space_inside_round_braces_in_call_expression.prototype" id="apidoc.module.ember-data.disallow_space_inside_round_braces_in_call_expression.prototype">module ember-data.disallow_space_inside_round_braces_in_call_expression.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.disallow_space_inside_round_braces_in_call_expression.prototype.check" id="apidoc.element.ember-data.disallow_space_inside_round_braces_in_call_expression.prototype.check">
+        function <span class="apidocSignatureSpan">ember-data.disallow_space_inside_round_braces_in_call_expression.prototype.</span>check
+        <span class="apidocSignatureSpan">(file, errors)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">check = function (file, errors) {
+  file.iterateNodesByType('CallExpression', function(node) {
+    var nodeBeforeRoundBrace = node;
+
+    if (node.callee) {
+      nodeBeforeRoundBrace = node.callee;
+    }
+
+    var roundBraceTokenStart = file.getTokenByRangeStart(nodeBeforeRoundBrace.range[0]);
+    var roundBraceTokenEnd   = file.getTokenByRangeStart(nodeBeforeRoundBrace.range[0]);
+
+    do {
+      roundBraceTokenStart = file.findNextToken(roundBraceTokenStart, 'Punctuator', '(');
+      roundBraceTokenEnd   = file.findNextToken(roundBraceTokenEnd, 'Punctuator', ')');
+    } while (roundBraceTokenStart.range[0] &lt; nodeBeforeRoundBrace.range[1]);
+
+    var firstArg = nodeBeforeRoundBrace.parentNode.arguments[0];
+    var lastArg  = nodeBeforeRoundBrace.parentNode.arguments[nodeBeforeRoundBrace.parentNode.arguments.length - 1];
+
+    var spaceAfterOpeningRoundBraceExists  = spaceAfterBrace(firstArg, roundBraceTokenStart);
+    var spaceBeforeClosingRoundBraceExists = spaceBeforeBrace(lastArg, roundBraceTokenEnd);
+
+    if (spaceAfterOpeningRoundBraceExists) {
+      errors.add(
+        'Illegal space after opening round brace',
+        roundBraceTokenStart.loc.start
+      );
+    }
+
+    if (spaceBeforeClosingRoundBraceExists) {
+      errors.add(
+        'Illegal space before closing round brace',
+        roundBraceTokenEnd.loc.start
+      );
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.disallow_space_inside_round_braces_in_call_expression.prototype.configure" id="apidoc.element.ember-data.disallow_space_inside_round_braces_in_call_expression.prototype.configure">
+        function <span class="apidocSignatureSpan">ember-data.disallow_space_inside_round_braces_in_call_expression.prototype.</span>configure
+        <span class="apidocSignatureSpan">(requireSpacesInsideRoundBracesInCallExpression)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">configure = function (requireSpacesInsideRoundBracesInCallExpression) {
+  assert(
+    requireSpacesInsideRoundBracesInCallExpression === true,
+    'disallowSpacesInsideRoundBracesInCallExpression option requires true value or should be removed'
+  );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.disallow_space_inside_round_braces_in_call_expression.prototype.getOptionName" id="apidoc.element.ember-data.disallow_space_inside_round_braces_in_call_expression.prototype.getOptionName">
+        function <span class="apidocSignatureSpan">ember-data.disallow_space_inside_round_braces_in_call_expression.prototype.</span>getOptionName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getOptionName = function () {
+  return 'disallowSpacesInsideRoundBracesInCallExpression';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-data.require_spaces_after_closing_parenthesis_in_function_declaration" id="apidoc.module.ember-data.require_spaces_after_closing_parenthesis_in_function_declaration">module ember-data.require_spaces_after_closing_parenthesis_in_function_declaration</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.require_spaces_after_closing_parenthesis_in_function_declaration" id="apidoc.element.ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.require_spaces_after_closing_parenthesis_in_function_declaration">
+        function <span class="apidocSignatureSpan">ember-data.</span>require_spaces_after_closing_parenthesis_in_function_declaration
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">require_spaces_after_closing_parenthesis_in_function_declaration = function () {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.prototype" id="apidoc.module.ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.prototype">module ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.prototype.check" id="apidoc.element.ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.prototype.check">
+        function <span class="apidocSignatureSpan">ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.prototype.</span>check
+        <span class="apidocSignatureSpan">(file, errors)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">check = function (file, errors) {
+  var beforeOpeningRoundBrace = this._beforeOpeningRoundBrace;
+  var beforeOpeningCurlyBrace = this._beforeOpeningCurlyBrace;
+
+  file.iterateNodesByType(['FunctionDeclaration'], function(node) {
+    var functionToken = file.getFirstNodeToken(node.id || node);
+    var nextToken = file.getNextToken(functionToken);
+
+    if (beforeOpeningRoundBrace) {
+      if (nextToken) {
+        errors.add(
+          'Missing space before opening round brace',
+          nextToken.loc.start
+        );
+      }
+    } else {
+      if (!nextToken) {
+        errors.add(
+          'Illegal space before opening round brace',
+          functionToken.loc.end
+        );
+      }
+    }
+
+    // errors if no token is found unless `includeComments` is passed
+    var tokenBeforeBody = file.getPrevToken(node.body, { includeComments: true });
+
+    if (beforeOpeningCurlyBrace) {
+      if (tokenBeforeBody) {
+        errors.add(
+          'Missing space before opening curly brace',
+          tokenBeforeBody.loc.start
+        );
+      }
+    } else {
+      if (!tokenBeforeBody) {
+        errors.add(
+          'Illegal space before opening curly brace',
+          node.body.loc.end
+        );
+      }
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.prototype.configure" id="apidoc.element.ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.prototype.configure">
+        function <span class="apidocSignatureSpan">ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.prototype.</span>configure
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">configure = function (options) {
+  assert(
+    typeof options === 'object',
+    'requireSpacesAfterClosingParenthesisInFunctionDeclaration option must be the object'
+  );
+
+  assert(
+    options.beforeOpeningCurlyBrace || options.beforeOpeningRoundBrace,
+    'requireSpacesAfterClosingParenthesisInFunctionDeclaration must have beforeOpeningCurlyBrace or beforeOpeningRoundBrace property
+'
+  );
+
+  this._beforeOpeningRoundBrace = Boolean(options.beforeOpeningRoundBrace);
+  this._beforeOpeningCurlyBrace = Boolean(options.beforeOpeningCurlyBrace);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.prototype.getOptionName" id="apidoc.element.ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.prototype.getOptionName">
+        function <span class="apidocSignatureSpan">ember-data.require_spaces_after_closing_parenthesis_in_function_declaration.prototype.</span>getOptionName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getOptionName = function () {
+  return 'requireSpacesAfterClosingParenthesisInFunctionDeclaration';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
