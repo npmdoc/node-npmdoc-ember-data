@@ -1,6 +1,6 @@
 # npmdoc-ember-data
 
-#### api documentation for  ember-data (v2.12.2)  [![npm package](https://img.shields.io/npm/v/npmdoc-ember-data.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ember-data) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ember-data.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ember-data)
+#### basic api documentation for  [ember-data (v2.12.2)](https://github.com/emberjs/data#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-ember-data.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ember-data) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ember-data.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ember-data)
 
 #### A data layer for your Ember applications.
 
@@ -21,29 +21,10 @@
 ```json
 
 {
-    "name": "ember-data",
-    "version": "2.12.2",
-    "description": "A data layer for your Ember applications.",
-    "repository": "git://github.com/emberjs/data.git",
-    "directories": {
-        "doc": "doc",
-        "test": "tests"
-    },
-    "scripts": {
-        "build": "ember build",
-        "start": "ember server",
-        "test": "ember try:testall",
-        "node-tests": "node node-tests/nodetest-runner.js",
-        "test:optional-features": "ember test --environment=test-optional-features",
-        "test:production": "ember test --environment=production",
-        "bower": "bower install",
-        "production": "ember build --environment=production"
-    },
-    "engines": {
-        "node": ">= 0.10.0"
-    },
     "author": "",
-    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/emberjs/data/issues"
+    },
     "dependencies": {
         "amd-name-resolver": "0.0.5",
         "babel-plugin-feature-flags": "^0.2.1",
@@ -69,6 +50,7 @@
         "semver": "^5.1.0",
         "silent-error": "^1.0.0"
     },
+    "description": "A data layer for your Ember applications.",
     "devDependencies": {
         "bower": "^1.6.5",
         "broccoli-asset-rev": "^2.4.2",
@@ -94,7 +76,7 @@
         "ember-cli-sri": "^2.1.0",
         "ember-cli-test-loader": "^1.1.0",
         "ember-cli-uglify": "^1.2.0",
-        "ember-dev": "emberjs/ember-dev#bcfb9c3487ec2fd58b932394a15ce16fd9cf7eed",
+        "ember-dev": "github:emberjs/ember-dev#bcfb9c3487ec2fd58b932394a15ce16fd9cf7eed",
         "ember-disable-prototype-extensions": "^1.1.0",
         "ember-disable-proxy-controllers": "^1.0.0",
         "ember-export-application-global": "^1.0.5",
@@ -117,19 +99,68 @@
         "rimraf": "2.5.2",
         "rsvp": "3.2.1"
     },
-    "peerDependencies": {
-        "ember-inflector": "^1.9.4"
+    "directories": {
+        "doc": "doc",
+        "test": "tests"
     },
-    "keywords": [
-        "ember-addon"
-    ],
+    "dist": {
+        "shasum": "45369001847b59e7d0ca8b183e9f57cb1f339260",
+        "tarball": "https://registry.npmjs.org/ember-data/-/ember-data-2.12.2.tgz"
+    },
     "ember-addon": {
         "configPath": "tests/dummy/config",
         "paths": [
             "lib/enable-optional-features-via-url"
         ],
         "after": "ember-cli-mocha"
-    }
+    },
+    "engines": {
+        "node": ">= 0.10.0"
+    },
+    "gitHead": "27dbc11c123ccf03205f53ad195cb647b4e96a29",
+    "homepage": "https://github.com/emberjs/data#readme",
+    "keywords": [
+        "ember-addon"
+    ],
+    "license": "MIT",
+    "maintainers": [
+        {
+            "name": "bmac"
+        },
+        {
+            "name": "fivetanley"
+        },
+        {
+            "name": "igort"
+        },
+        {
+            "name": "rwjblue"
+        },
+        {
+            "name": "stefanpenner"
+        }
+    ],
+    "name": "ember-data",
+    "optionalDependencies": {},
+    "peerDependencies": {
+        "ember-inflector": "^1.9.4"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/emberjs/data.git"
+    },
+    "scripts": {
+        "bower": "bower install",
+        "build": "ember build",
+        "node-tests": "node node-tests/nodetest-runner.js",
+        "production": "ember build --environment=production",
+        "start": "ember server",
+        "test": "ember try:testall",
+        "test:optional-features": "ember test --environment=test-optional-features",
+        "test:production": "ember test --environment=production"
+    },
+    "version": "2.12.2",
+    "bin": {}
 }
 ```
 
